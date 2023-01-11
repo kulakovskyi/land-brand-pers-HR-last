@@ -53,6 +53,7 @@ body
       .first-line,.second-line,.third-line
         position: relative
         transform: translateX(-120%)
+        white-space: nowrap
         &:before
           content: ""
           background: $magenta
@@ -64,6 +65,7 @@ body
           z-index: 1
       .first-line
         animation: .6s sloganIn linear forwards
+        display: flex
         &:before
           animation: .6s line .6s forwards
       .second-line
@@ -112,7 +114,7 @@ body
     &-bird
       height: 518px
       position: absolute
-      bottom: 0
+      top: 45%
       right: -10px
       transform-origin: right center
       animation: 7s zoomBird ease-in-out infinite
@@ -224,9 +226,9 @@ body
   0%
     transform: scale(1)
   50%
-    transform: scale(1.1)
+    transform: scale(1.05)
   60%
-    transform: scale(1.1)
+    transform: scale(1.05)
   100%
     transform: scale(1)
 
